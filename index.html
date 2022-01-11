@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Precisando calcular o seu IMC? Então este é o lugar certo!">
+    <title>CalcFit Calculadora IMC</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">CalcFit</h1>
+        <img class="header-logo" src="img/logo.png" width="36pt">
+    </header>
+    <main class="conteudo-principal">
+        <div class="welcome">
+            <h1>Bem vindo(a)!</h1>
+            <p>Experimente aqui nossa Calculadora de IMC: <strong>Índice de Massa Corporal</strong></p>
+            <p>É um cálculo idealizado, baseado em estudos científicos
+                na área da Saúde, usado para avaliar se o indivíduo está dentro do seu peso ideal em relação à sua altura.
+            </p>
+        </div>
+        <div class="form-container">
+            <div class="calculator">
+                <h2 class="calculator-title">Insira as informações abaixo</h2>
+                <div class="calculator-separator">
+                    <label for="pesoIn">Seu Peso (Kg): </label>
+                    <input type="number" id="pesoIn" placeholder="" min="1" max="260" maxlength="2"/>
+                </div>
+                <div class="calculator-separator">
+                    <label for="alturaIn">Sua Altura (m): </label>
+                    <input type="number" id="alturaIn" placeholder="" min="1" max="3" maxlength="4"/>
+                </div>
+                <div class="calculator-buttons">
+                    <button class="calculator-button" id="btnCalc">Calcular IMC</button>
+                </div>
+            </div>
+            <div class="response">
+                <h2>Seu IMC É:</h2>
+                <div id="response">
+                    ...
+                </div>
+            </div>
+        </div>
+        <section class="information">
+            <p class="info-text">* Os dados da tabela abaixo foram utilizados como referência para os cálculos</p>
+            <div class="image-container">
+                <img class="img" src="img/tabela.jpg" alt="Tabela base com dados de IMC"/>
+            </div>
+            
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer-info">Desenvolvido por <a href="https://github.com/kervijhonata">Kervi Jhonata</a></p>
+        <p class="footer-date">2022</p>
+    </footer>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>

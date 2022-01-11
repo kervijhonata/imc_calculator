@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&Cutive+Mono&family=Space+Grotesk&display=swap');
+
+:root {
+    --primary-color: limegreen;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    background: #ffffff; /*#64686e*/
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.header {
+    background: var(--primary-color);
+    box-sizing: border-box;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 30px;
+}
+
+.header-title {
+    margin: 0;
+    font-family: Righteous;
+    font-size: 26pt;
+}
+
+.header-logo {
+    margin-left: 10px;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome {
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 30px;
+    color: white;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 30px;
+    gap: 40px;
+}
+
+.calculator, .response{
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator-title {
+    width: 100%;
+}
+
+.calculator-separator {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+}
+
+.calculator-separator input {
+    border: none;
+    border: 2px solid var(--primary-color);
+    margin-bottom: 20px;
+    height: 30px;
+}
+
+.calculator button {
+    margin: 20px auto;
+    align-self: center;
+    justify-self: center;
+    width: 120px;
+    height: 40px;
+    background: var(--primary-color);
+    border: none;
+    font-size: 12pt;
+    color: white;
+}
+.response {
+    display: flex;
+    align-items: center;
+}
+
+#response {
+    font-size: 50pt;
+    text-align: center;
+    align-self: center;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 0;
+    padding: 30px;
+    box-sizing: border-box;
+} 
+
+.information .image-container {
+    width: 90%;
+}
+
+.information .image-container img {
+    width: 100%;
+}
+
+footer {
+    background: #999999;
+    padding: 2px 30px;
+    font-family: "Cutive Mono", monospace;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    color: greenyellow;
+    text-decoration: none;
+}
+
+footer a:hover, footer a:focus {
+    color: yellow;
+}
+
+.monitor {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 760px){
+    .form-container {
+        grid-template-columns: 1fr;
+    }
+}
