@@ -1,4 +1,4 @@
-# Projeto Front-End CalcFit : Calculadora IMC
+# [Front-End] Projeto CalcFit : Calculadora IMC
 
 ![landing image do projeto principal](https://github.com/kervijhonata/imc_calculator/blob/main/publish/landing.png?raw=true)
 
