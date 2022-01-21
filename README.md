@@ -11,3 +11,5 @@ A página está construída de forma à seguir padrões de responsividade entre 
 
 ### View Mobile
 ![Mobile sized page](https://github.com/kervijhonata/imc_calculator/blob/main/publish/mobile_landing-example.png?raw=true)
+
+Confira o Projeto em: https://kervijhonata.github.io/imc_calculator/
